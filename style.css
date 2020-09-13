@@ -30,12 +30,13 @@ body {
 #wrapper {/*conteneur*/
 	position: absolute;
 	z-index: 1;
-	width: 100%;
+	width: 80%;
 	height: 100%;
 	top: 0;
 	right: 0;
 	background: var(--ivoire);
 	overflow: hidden;
+	border: 10px solid #8e00ff;
 }
 
 #scroller {/*"carte" du scroll*/
@@ -63,32 +64,37 @@ body {
 	text-size-adjust: none;
 }
 
-
+/*TITRE IMG*/
+#titre1{
+	position: fixed;
+	width: 15%;
+	margin-left: 1%;
+}
 /*les textes clickables*/
 #bookmarks {
 	z-index: 2;
-	padding: 1% 1% 1% 1.3%;
+	padding: 8% 1% 1% 1.3%;
 	position: absolute;
 	font-size: 3em;
 	left: 0%;
 	top: 0%;
 	background-color: transparent;
+	font-family: 'Redaction 20'
 }
 #bookmarks li {
   list-style: none;
 	margin: 5px 0;
-	background-color: transparent;
-
+	color:var(--ivoire);
 }
 #bookmarks a{
-	background-color: transparent;
+	color:var(--ivoire);
 
+	background-color: transparent;
   font-family:'Redaction 20';
-  color: var(--violet);
   text-decoration: none;
 }
 #bookmarks a:hover{
-
+	cursor: pointer;
   font-family:'Redaction 50';
 	font-style: italic;
 
