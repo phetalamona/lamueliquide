@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-  <meta charset="UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <title>La Mue</title>
   <script type="text/javascript" src="iscroll.js"></script>
   <script src="broadway.js" type="text/javascript"></script>
@@ -9,20 +10,25 @@
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="typo/stylesheet.css">
 
 </head>
-<body>
-  <div id="wrapper">
-    <div id="scroller">
+<body onload="loaded()">
+  <div class="wrapper">
+    <div class="scroller">
       <!-- images ici -->
+    <img id="adelie" src="assets\adelie_gif.gif"></img>
+    <img id="carlaetco" src="assets\lillyliquide.jpg"></img>
+    <img id="maude" src="assets\maude.jpg"></img>
+    <img id="mina" src="assets\LIQUIIIIDE (mindechat) refait.jpg"></img>
+
     </div>
   </div>
   <div class="bandeau_gauche">
   <img id="titre1" src="logo.svg"></img>
 
-  <ul id="bookmarks">
-    <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#jamet'),400,-100,-100,IScroll.utils.ease.circular)">Lilly B</a></li>
-    <li><a>Mina Dechatre</a></li>
-    <li><a>Malinx Lynx</a></li>
-    <li><a>Mina Dechatre</a></li>
+  <ul class="bookmarks">
+    <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#adelie'),400,-100,-100,IScroll.utils.ease.circular)">Adélie.gir</a></li>
+    <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#carlaetco'),400,-100,-100,IScroll.utils.ease.circular)">Carlaetco</a></li>
+    <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#maude'),400,-300,-50,IScroll.utils.ease.circular)">Maude Lemieux</a></li>
+    <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#mina'),400,-100,-100,IScroll.utils.ease.circular)">Mina Dechatre</a></li>
     <li><a>Youpiman</a></li>
     <li><a>Bulle d'o</a></li>
     <li><a>youloulou</a></li>

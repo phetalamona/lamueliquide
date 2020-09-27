@@ -25,9 +25,9 @@ body {
 	overflow: hidden; /* this is important to prevent the whole page to bounce */
 }
 
-/*SCROLL*/
+/*SCROLL--------------------------------------*/
 
-#wrapper {/*conteneur*/
+.wrapper {/*conteneur*/
 	position: absolute;
 	z-index: 1;
 	width: 80%;
@@ -39,7 +39,7 @@ body {
 	border: 10px solid #8e00ff;
 }
 
-#scroller {/*"carte" du scroll*/
+.scroller {/*"carte" du scroll*/
 	position: absolute;
 	z-index: 1;
 	width: 4000px;
@@ -64,7 +64,7 @@ body {
 	text-size-adjust: none;
 }
 
-/*TITRE IMG*/
+/*TITRE IMG----------------------------*/
 .bandeau_gauche{
 	padding-top:2%;
 	padding-left: 1%;
@@ -76,8 +76,8 @@ body {
 	margin-top: 1%;
 	margin-left: 1%;
 }
-/*les textes clickables*/
-#bookmarks {
+/*les textes clickables----------------*/
+.bookmarks {
 	z-index: 2;
 	padding: 8% 1% 1% 1.3%;
 	position: relative;
@@ -87,39 +87,59 @@ body {
 	background-color: transparent;
 	font-family: 'Redaction 20'
 }
-#bookmarks li {
+
+.bookmarks li {
   list-style: none;
 	margin: 5px 0;
 	color:var(--ivoire);
 }
-#bookmarks a{
-	color:var(--ivoire);
 
+.bookmarks a{
+	color:var(--ivoire);
 	background-color: transparent;
   font-family:'Redaction 20';
   text-decoration: none;
 }
-#bookmarks a:hover{
+
+.bookmarks a:hover{
 	cursor: pointer;
   font-family:'Redaction 50';
 	font-style: italic;
-
 }
-#bookmarks a:active{
 
+.bookmarks a:active{
   font-family:'Redaction 50';
 	font-style: italic;
-
 	color: black;
 }
 
-/*les images*/
+/*les images-------------------------------*/
 
-/*#id de chaque image{
-  mix-blend-mode: multiply;
+.scroller img{
+  mix-blend-mode:darken;
   position: fixed;
 }
-#image{
+#adelie{
+	width: 10%;
+	top:10%;
+	left:20%;
+}
+#mina{
+	width: 13%;
+	top:60%;
+	left:80%;
+}
+#maude{
+	width: 15%;
+	top:20%;
+	left:30%;
+}
+#carlaetco{
+	height: 20%;
+	top:20%;
+	left:80%;
+}
+/*#image{
 	width: en %; ou height
 	top: en %;
 	left:en %;

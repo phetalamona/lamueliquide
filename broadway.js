@@ -3,9 +3,9 @@
 var myScroll;
 
 function loaded () {
-	myScroll = new IScroll('#wrapper', {
-		startX: 100-(document.querySelector('#titre').getBoundingClientRect().left),
-		startY: 200-(document.querySelector('#titre').getBoundingClientRect().top),
+	myScroll = new IScroll('.wrapper', {
+		startX: 100,
+		startY: 200,
 		scrollY: true,
 		scrollX: true,
 		freeScroll: true,
