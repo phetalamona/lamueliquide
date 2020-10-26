@@ -24,7 +24,17 @@ body {
 	font-family: ubuntu, helvetica, arial;
 	overflow: hidden; /* this is important to prevent the whole page to bounce */
 }
+/* COUV ------------*/
 
+.couv{
+	background-color: var(--violet);
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	top:0px;
+	left:0px;
+	z-index: 3;
+}
 /*SCROLL--------------------------------------*/
 
 .wrapper {/*conteneur*/
@@ -65,7 +75,7 @@ body {
 }
 
 /*TITRE IMG----------------------------*/
-.bandeau_gauche{
+.menu-artistes{
 	padding-top:2%;
 	padding-left: 1%;
 	width: 20%;

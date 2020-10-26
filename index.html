@@ -1,47 +1,72 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <title>La Mue</title>
-  <script type="text/javascript" src="iscroll.js"></script>
-  <script src="broadway.js" type="text/javascript"></script>
+
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="stylephone.css">
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="typo/stylesheet.css">
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="iscroll.js"></script>
 </head>
-<body onload="loaded()">
-  <div class="wrapper">
-    <div class="scroller">
-      <!-- images ici -->
-    <img id="adelie" src="assets\adelie_gif.gif"></img>
-    <img id="carlaetco" src="assets\lillyliquide.jpg"></img>
-    <img id="maude" src="assets\maude.jpg"></img>
-    <img id="mina" src="assets\LIQUIIIIDE (mindechat) refait.jpg"></img>
 
+<body onload="loaded()">
+  <!-- COUV -->
+  <div class="couv"></div>
+  <!-- EDITO -->
+  <div class="edito">
+    <p>La phase liquide est un état de la matière ainsi qu'une forme de fluide.
+Le liquide c'est le magma, la lave, l'hélium II et la pluie. Il prend la forme de son contenant, éternellement adapté.
+Mais comment le décrire, le dessiner autrement qu'en plaçant cet état en opposition au solide? Comment mettre en scène ce qui n'a pas de corps?
+On pourrait alors imaginer que liquide est furtif, coule entre les murs, les pores, s'échappe.
+On pourrait aussi le voir poussé, mis en tension par le vent et des pressions atmosphériques.
+C'est pour cela que notre première mu(e)tation est liquide.
+    </p>
+  </div>
+  <!-- MENU ART -->
+  <div class="menu-artistes">
+    <!-- LOGO MUE -->
+    <h1 class="lamue"><b>L</b>a&nbsp<b>M</b>ue</h1>
+    <h1 class="liquide">n<sup>o</sup> liquide</h1>
+    <!-- BURGER -->
+    <div class="burger"><img src="burger-mue.svg" width="40px"/></div>
+    <!-- BOOKMARKS ARTISTES -->
+    <ul class="bookmarks">
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#adelie'),400,-100,-100,IScroll.utils.ease.circular)">Adélie.gir</a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#carlaetco'),400,-100,-100,IScroll.utils.ease.circular)">Carlaetco</a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#maude'),400,-300,-50,IScroll.utils.ease.circular)">Maude Lemieux</a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#mina'),400,-100,-100,IScroll.utils.ease.circular)">Mina Dechatre</a></li>
+      <li><a>Youpiman</a></li>
+      <li><a>Bulle d'o</a></li>
+      <li><a>youloulou</a></li>
+      <li><a>Mina Dechatre</a></li>
+      <li><a>Malinx Lynx</a></li>
+      <li><a>Coucou</a></li>
+      <!-- on call direct ds l'html (élément,temps,offsetX,offsetY,easing) -->
+      <!-- peut-être à faire en jquery avc des chiffres pr optimiser o max si jamais besoin -->
+    </ul>
+    <!-- LIEN OURS -->
+    <!-- OURS -->
+  </div>
+  <!-- NAV -->
+  <div class="navigation">
+    <div class="wrapper">
+      <div class="scroller">
+        <!-- images ici -->
+        <img id="adelie" src="assets\adelie_gif.gif"></img>
+        <img id="carlaetco" src="assets\lillyliquide.jpg"></img>
+        <img id="maude" src="assets\maude.jpg"></img>
+        <img id="mina" src="assets\LIQUIIIIDE (mindechat) refait.jpg"></img>
+
+      </div>
     </div>
   </div>
-  <div class="bandeau_gauche">
-  <img id="titre1" src="logo.svg"></img>
 
-  <ul class="bookmarks">
-    <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#adelie'),400,-100,-100,IScroll.utils.ease.circular)">Adélie.gir</a></li>
-    <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#carlaetco'),400,-100,-100,IScroll.utils.ease.circular)">Carlaetco</a></li>
-    <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#maude'),400,-300,-50,IScroll.utils.ease.circular)">Maude Lemieux</a></li>
-    <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#mina'),400,-100,-100,IScroll.utils.ease.circular)">Mina Dechatre</a></li>
-    <li><a>Youpiman</a></li>
-    <li><a>Bulle d'o</a></li>
-    <li><a>youloulou</a></li>
-    <li><a>Mina Dechatre</a></li>
-    <li><a>Malinx Lynx</a></li>
-    <li><a>Coucou</a></li>
-
-
-
-
-  	<!-- on call direct ds l'html (élément,temps,offsetX,offsetY,easing) -->
-  	<!-- peut-être à faire en jquery avc des chiffres pr optimiser o max si jamais besoin -->
-  </ul>
-</div>
 </body>
+
+<script type="text/javascript" src="broadway.js"></script>
+
 </html>
