@@ -22,7 +22,7 @@ body,ul,li {
 body {
 	font-size: 12px;
 	font-family: ubuntu, helvetica, arial;
-	overflow: hidden; /* this is important to prevent the whole page to bounce */
+/*	overflow: hidden; /* this is important to prevent the whole page to bounce */
 }
 /* COUV ------------*/
 
@@ -124,7 +124,9 @@ body {
 }
 
 /*les images-------------------------------*/
-
+.navigation{
+	overflow: hidden; /* this is important to prevent the whole page to bounce */
+}
 .scroller img{
   mix-blend-mode:darken;
   position: fixed;
