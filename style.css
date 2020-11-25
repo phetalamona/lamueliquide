@@ -124,6 +124,13 @@ body {
 }
 
 /*les images-------------------------------*/
+.temp a{
+	color: var(--ivoire);
+}
+.temp a:active{
+	color: var(--ivoire);
+	text-decoration: overline;
+}
 .navigation{
 	overflow: hidden; /* this is important to prevent the whole page to bounce */
 }
