@@ -18,7 +18,10 @@ $(".burger").click(function(){
 	$(".bookmarks").slideToggle( "slow", function() {});
 	clicks = 0;}
 });
-
+$(".jumpto").click(function(){$(".menu-artistes").animate({
+	height:"50px"},500, function(){});
+	$(".bookmarks").slideToggle( "slow", function() {});
+});
 function divMaker(w,h,x,y,d){
 	//permet de créer une div
 	var newDiv = document.createElement("div");
