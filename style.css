@@ -158,6 +158,14 @@ body {
 	top:20%;
 	left:80%;
 }
+.pjs,#holder{
+	position: fixed;
+	top:30%;
+	left:10%;
+	height: 500px;
+	width: 500px;
+	border-color: var(--ivoire);
+}
 /*#image{
 	width: en %; ou height
 	top: en %;

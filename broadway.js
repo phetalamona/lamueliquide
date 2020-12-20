@@ -19,7 +19,7 @@ $(".burger").click(function(){
 	clicks = 0;}
 });
 
-function createDiv(w,h,x,y,d){
+function divMaker(w,h,x,y,d){
 	//permet de créer une div
 	var newDiv = document.createElement("div");
 	newDiv.style.position = "fixed";
@@ -36,11 +36,11 @@ function createDiv(w,h,x,y,d){
 	newDiv.style.fontFamily="'Redaction 50'";
 	newDiv.style.paddingTop = ((44*h)/100)+"px";
 	newDiv.style.paddingLeft = ((1*w)/100)+"px";
-	console.log(x);
+	console.log("hihi");
 	document.querySelector(".scroller").appendChild(newDiv);
 }
 
-$(".image").click(function(){
+$(".image,.pjs").click(function(){
 		var idimage = $(this).attr('id');
 		console.log(idimage);
 		var width = this.width;
@@ -52,7 +52,7 @@ $(".image").click(function(){
 		console.log(height);
 		console.log(top);
 		console.log(left);
-	  createDiv(width,height,top,left,metadata);
+	  divMaker(width,height,top,left,metadata);
 		$(".temp").fadeOut(6000);
 });
 //J'ai rien touché à part le startX et startY, il faudra peut être bidouiller
@@ -74,3 +74,9 @@ function loaded () {
 // 	capture: false,
 // 	passive: false
 // } : false);
+
+//P5JS
+var a =['▓','▒','░',' '];let t = 0;let c=25;let h=c*c;
+function setup(){var cnv=createCanvas(500,500);cnv.parent("holder");frameRate(30);}
+function draw(){background(252, 252, 237,60);for(i=0;i<c;i++){for(j=0;j<c;j++){
+let nanana = int(sin(sqrt(t)*j+sin(i))*-4);let finale;fill(142, 0, 255);textSize(20);if(nanana<0){finale=-nanana;}else{finale=nanana;}if(finale>3){finale=3;}text(a[finale],i*c,j*c);}}t+=1;}
