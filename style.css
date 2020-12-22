@@ -9,10 +9,11 @@
   --violet: #8e00ff;
 }
 html {
+	overflow: hidden;
 	-ms-touch-action: none;
 }
 
-body,ul,li {
+body {
 	padding: 0;
 	margin: 0;
 	border: 0;
@@ -35,12 +36,31 @@ body {
 	left:0px;
 	z-index: 3;
 }
+
+.edito{
+	background-color: var(--violet);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 4;
+	top:0px;
+	left:0px;
+	padding:0% 2%;
+	overflow-y:auto;
+}
+.edito p{
+	margin-top: 1%;
+	color: var(--ivoire);
+	font-size: 22pt;
+	font-family: 'Redaction 20';
+	font-style: italic;
+}
 /*SCROLL--------------------------------------*/
 
 .wrapper {/*conteneur*/
 	position: absolute;
 	z-index: 1;
-	width: 80%;
+	width: 82%;
 	height: 100%;
 	top: 0;
 	right: 0;
@@ -75,10 +95,37 @@ body {
 }
 
 /*TITRE IMG----------------------------*/
+.burger{display: none;}
 .menu-artistes{
-	padding-top:2%;
+	padding-top:0%;
 	padding-left: 1%;
 	width: 20%;
+}
+.menu-artistes .lamue{
+	position: relative;
+	vertical-align: top
+	line-height: 10px;
+	color:var(--ivoire);
+	font-size: 50pt;
+	text-align: left;
+	font-family: 'Redaction 10';
+	font-weight: normal;
+	margin: 0px;
+}
+.menu-artistes .lamue b{
+	font-family: 'Redaction 50';
+	font-weight: normal;
+}
+.menu-artistes .liquide{
+	display: inline-flex;
+	color:var(--black);
+	font-size: 34pt;
+	font-family: 'Redaction 20';
+	font-weight: normal;
+	font-style: italic;
+	vertical-align: top;
+	margin-top: -5%;
+	margin-bottom: .8%;
 }
 #titre1{
 	position: relative;
@@ -87,42 +134,65 @@ body {
 	margin-left: 1%;
 }
 /*les textes clickables----------------*/
-.bookmarks {
+.bookmarks{visibility:hidden;opacity: 0%;height:0px;}
+.bookmarksweb{
 	z-index: 2;
-	padding: 8% 1% 1% 1.3%;
-	position: relative;
+	position: fixed;
+	top:-2.5%;
+	left:19.5%;
+	padding:0%;
 	font-size: 2.3vw;
-	left: 0%;
-	top: 0%;
 	background-color: transparent;
-	font-family: 'Redaction 20'
+	font-family: 'Redaction 20';
 }
 
-.bookmarks li {
+.bookmarksweb li{
   list-style: none;
 	margin: 5px 0;
-	color:var(--ivoire);
+	color:black;
 }
 
-.bookmarks a{
-	color:var(--ivoire);
+.bookmarksweb a{
+	color:black;
 	background-color: transparent;
   font-family:'Redaction 20';
   text-decoration: none;
 }
 
-.bookmarks a:hover{
+.bookmarksweb a:hover{
 	cursor: pointer;
   font-family:'Redaction 50';
 	font-style: italic;
 }
 
-.bookmarks a:active{
+.bookmarksweb a:active{
   font-family:'Redaction 50';
 	font-style: italic;
 	color: black;
 }
-
+/*OURS-------------------------------*/
+.pours{margin-top:-7%;}
+.pours h2:first-of-type{
+	margin-top:0px;
+}
+.pours h2{
+	margin-top:20px;
+	margin-bottom: 10px;
+	font-size: 18pt;
+	color: var(--ivoire);
+	font-family: 'Redaction 50';
+	font-weight: normal;
+}
+.pours ol{
+	display: block;
+	font-size: 13pt;
+	padding: 0px;
+	color: var(--ivoire);
+	font-family: 'Redaction';
+	font-weight: normal;
+	margin:0px;
+	list-style: none;
+}
 /*les images-------------------------------*/
 .temp a{
 	color: var(--ivoire);

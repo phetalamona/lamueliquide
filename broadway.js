@@ -3,6 +3,7 @@ $(".edito").click(function(){
 	$(".edito").fadeOut(2000);
 });
 
+//Magie menu
 var clicks = 0;
 $(".burger").click(function(){
 	if(clicks==0){
@@ -11,17 +12,31 @@ $(".burger").click(function(){
 		},500, function(){});
 		$(".bookmarks").slideToggle( "slow", function() {});
 	clicks = 1;}
-	else{
+	else if (clicks==1){
 	$(".menu-artistes").animate({
 		height:"50px"
 	},500, function(){});
 	$(".bookmarks").slideToggle( "slow", function() {});
 	clicks = 0;}
+	else{
+		$(".ours").toggle(500,function(){});
+		$(".bookmarks").slideToggle( "slow", function() {});
+		clicks = 1;
+	}
 });
+//click qui ferme auto
 $(".jumpto").click(function(){$(".menu-artistes").animate({
 	height:"50px"},500, function(){});
 	$(".bookmarks").slideToggle( "slow", function() {});
+	clicks = 0;
 });
+//click ours
+$(".lien-ours").click(function(){
+	$(".bookmarks").toggle(500,function(){});
+	$(".ours").toggle(500,function(){});
+	clicks=2;
+});
+
 function divMaker(w,h,x,y,d){
 	//permet de créer une div
 	var newDiv = document.createElement("div");
