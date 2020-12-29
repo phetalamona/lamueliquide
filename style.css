@@ -48,7 +48,7 @@ body {
 	padding:0% 2%;
 	overflow-y:auto;
 }
-.edito p{
+.edito p{max-width:500px;
 	margin-top: 1%;
 	color: var(--ivoire);
 	font-size: 22pt;
@@ -215,8 +215,8 @@ body {
 }
 #mina{
 	width: 13%;
-	top:60%;
-	left:80%;
+	top:45%;
+	left:55%;
 }
 #maude{
 	width: 15%;
@@ -230,11 +230,26 @@ body {
 }
 .pjs,#holder{
 	position: fixed;
-	top:30%;
+	top:50%;
 	left:10%;
 	height: 500px;
 	width: 500px;
 	border-color: var(--ivoire);
+}
+
+#phili {width:10%;
+	top:5%;
+	right:5%;
+}
+
+#marjo {width:15%;
+	top:5%;
+	left:55%;
+}
+
+#axel {width:10%;
+	bottom:10%;
+	right:10%;
 }
 /*#image{
 	width: en %; ou height
