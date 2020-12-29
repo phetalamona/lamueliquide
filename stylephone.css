@@ -76,9 +76,8 @@
   }
   .menu-artistes .burger{
     position: relative;
-    margin-right: 10px;
+    margin-right: 5px;
     margin-top: 10px;
-		float:right;
 		display: inline-flex;
   }
   .burger img:hover{
