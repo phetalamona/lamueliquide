@@ -55,24 +55,31 @@ C'est pour cela que notre première mu(e)tation est liquide.
       <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#maude'),300,-50,-50,IScroll.utils.ease.circular)">Maude Lemieux</a></li>
       <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#mina'),400,-100,-100,IScroll.utils.ease.circular)">Mina Dechatre</a></li>
       <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#holder'),400,-100,-100,IScroll.utils.ease.circular)">Drice DdS</a></li>
-      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#phili'),400,-100,-100,IScroll.utils.ease.circular)">Philippine Talamona</a></li>
-      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#marjo'),400,-100,-100,IScroll.utils.ease.circular)">Marjorie Bodet</a></li>
-      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#axel'),400,-100,-100,IScroll.utils.ease.circular)">Axel Alousque</a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#phili'),400,-100,-100,IScroll.utils.ease.circular)">Philippine Talamona</a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#marjo'),400,-100,-100,IScroll.utils.ease.circular)">Marjorie Bodet</a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#axel'),400,-100,-100,IScroll.utils.ease.circular)">Axel Alousque</a></li>
       <!-- on call direct ds l'html (élément,temps,offsetX,offsetY,easing) -->
       <!-- LIEN OURS -->
+                  <!-- zoom-->
+      <button div="zoomplus" onclick="myFunction()">+</button>
+      <button div="zoommoins" onclick="myFunction2()">-</button>
+      <button div="zoom" onclick="myFunction3()">normal</button>
+
+
     </ul>
+
+
     <!-- OURS -->
     <div class="ours">
       <div class="pours">
       <h2>Contributeurs·ices</h2>
-      <ol><li><a href='https://www.instagram.com/mindechat/'>Mina Dechatre</a></li><li><a href='https://www.instagram.com/demi_mau/'>Maude Lemieux</a></li><li><a href='https://www.instagram.com/carlaetco/'>Carlaetco</a></li><li><a href='https://www.instagram.com/adelie.gir/'>Adelie.gir</a></li><li><a href='https://www.instagram.com/dric_dds/'>Drice Ducongé dos Santos</a></li><li><a href='https://www.instagram.com/philippine.talamona/'>Philippine Talamona</a></li><li><a href='https://www.instagram.com/marjoriebodet/'>Marjorie Bodet</a></li>
-        <li><a href='https://www.instagram.com/groupie_facile_/'>Axel Alousque</a></li></ol>
+      <ol><li>Mina Dechatre</li><li>Maude Lemieux</li><li>Carlaetco</li><li>Adelie.gir</li><li>Drice Ducongé dos Santos</li><li>Philippine Talamona</li><li>Marjorie Bodet</li><li>Axel Alousque</li><li>Agathe Torres</ol>
       <h2>Edition et code</h2>
       <ol><li>Drice Ducongé dos Santos</li><li>Philippine Talamona</li></ol>
       <h2>Composition</h2>
-      <ol><li>Redaction <a href='https://www.redaction.us/'>https://www.redaction.us/</a></li></ol>
+      <ol><li>Redaction https://www.redaction.us/</li></ol>
       <h2>Contact</h2>
-      <ol><li><a href="mailto: drice-phili@lamue.fun">drice-phili@lamue.fun</a></li><li><a href="drice-phili@lamue.fun">@la.mue</a></li></ol>
+      <ol><li>dricetphili@lamue.com</li><li>@la.mue</li></ol>
       </div>
     </div>
   </div>
@@ -80,6 +87,7 @@ C'est pour cela que notre première mu(e)tation est liquide.
   <div class="navigation">
     <div class="wrapper">
       <div class="scroller">
+
         <!-- images ici -->
         <img class="image"  id="adelie" data-meta="<a href='https://www.instagram.com/adelie.gir/'>@adelie.gir</a>" src="assets\adelie_gif.gif"></img>
         <img class="image" id="carlaetco" data-meta="<a href='https://www.instagram.com/carlaetco/'>@carlaetco</a>" src="assets\lillyliquide.jpg"></img>
@@ -99,6 +107,29 @@ C'est pour cela que notre première mu(e)tation est liquide.
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
 <script type="text/javascript" src="broadway.js"></script>
 <script type="text/javascript" src="canvas.js"></script>
+<script>
+    function myFunction() {
+  var x = document.getElementsByClassName("scroller");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.zoom = "200%";
+  }
+}
+function myFunction2() {
+  var x = document.getElementsByClassName("scroller");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.zoom = "50%";
+  }
+}
+function myFunction3() {
+  var x = document.getElementsByClassName("scroller");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.zoom = "100%";
+  }
+}
+</script>
 
 
 </html>
