@@ -48,7 +48,7 @@
   }
 	.menu-artistes .lamue{
     position: relative;
-    vertical-align: top
+    vertical-align: top;
     line-height: 6px;
     color:var(--ivoire);
     font-size: 30pt;
