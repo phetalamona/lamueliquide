@@ -65,21 +65,22 @@
   .menu-artistes .liquide{
     display: inline-flex;
     color:var(--black);
-    font-size: 34pt;
+    font-size: 30pt;
     font-family: 'Redaction 20';
     font-weight: normal;
     font-style: italic;
     vertical-align: top;
     margin-top: -5px;
+		margin-right: 0px;
     margin-left: 10px;
 		margin-bottom: 0%;
   }
   .menu-artistes .burger{
     position: relative;
-    margin-right: 10px;
+    margin-right: 5px;
     margin-top: 10px;
     float:right;
-		display: block;
+		display: inline-flex;
   }
   .burger img:hover{
     filter:invert();
