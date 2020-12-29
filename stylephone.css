@@ -65,7 +65,7 @@
   .menu-artistes .liquide{
     display: inline-flex;
     color:var(--black);
-    font-size: 34pt;
+    font-size: 30pt;
     font-family: 'Redaction 20';
     font-weight: normal;
     font-style: italic;
@@ -78,7 +78,6 @@
     position: relative;
     margin-right: 10px;
     margin-top: 10px;
-    float:right;
 		display: block;
   }
   .burger img:hover{
