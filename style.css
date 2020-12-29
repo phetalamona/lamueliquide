@@ -47,13 +47,23 @@ body {
 	left:0px;
 	padding:0% 2%;
 	overflow-y:auto;
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+	scrollbar-width: none;  /* Firefox */
+	-moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.edito p{max-width:500px;
+.edito p{
 	margin-top: 1%;
 	color: var(--ivoire);
-	font-size: 22pt;
+	font-size: 50pt;
 	font-family: 'Redaction 20';
 	font-style: italic;
+}
+
+.edito::-webkit-scrollbar{
+      display: none;  /* Safari and Chrome */
 }
 /*SCROLL--------------------------------------*/
 
@@ -193,6 +203,24 @@ body {
 	margin:0px;
 	list-style: none;
 }
+
+	.pours ol li a{
+		color:var(--ivoire);
+		  font-family:'Redaction 20';
+		text-decoration: none;
+	}
+	.pours ol li a:hover{
+		color:var(--ivoire);
+		  font-family:'Redaction 50';
+			font-style: italic;
+		text-decoration: none;
+	}
+	.pours ol li a:active{
+		color:black;
+		  font-family:'Redaction 50';
+			font-style: italic;
+		text-decoration: none;
+	}
 /*les images-------------------------------*/
 .temp a{
 	color: var(--ivoire);
