@@ -49,7 +49,7 @@
 	.menu-artistes .lamue{
     position: relative;
     vertical-align: top
-    line-height: 10px;
+    line-height: 6px;
     color:var(--ivoire);
     font-size: 30pt;
     font-family: 'Redaction 10';
