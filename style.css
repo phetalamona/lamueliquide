@@ -238,7 +238,7 @@ body {
 }
 #adelie{
 	width: 10%;
-	top:10%;
+	top:5%;
 	left:20%;
 }
 #mina{
@@ -266,8 +266,8 @@ body {
 }
 
 #phili {width:10%;
-	top:5%;
-	right:5%;
+	bottom:15%;
+	left:35%;
 }
 
 #marjo {width:15%;
