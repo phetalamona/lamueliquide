@@ -106,6 +106,9 @@ body {
 
 /*TITRE IMG----------------------------*/
 .burger{display: none;height:5%}
+#zoomplus {display: none}
+/*#zoomburger {display: none;height:5%}*/
+
 .menu-artistes{
 	padding-top:0%;
 	padding-left: 1%;

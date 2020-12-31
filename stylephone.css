@@ -133,9 +133,14 @@
 	}
 
 	/*les images-------------------------------*/
+
+	#zoomburger {position:fixed;bottom:3%;left:5%}
+
+#zoomburger button {
+	background: black;
+	border: 1px solid black;
+	box-shadow: none;
+	border-radius: 0px;
 }
 
-#zoomburger button {background: var(--ivoire);
-	border: 1px solid var(--ivoire);
-	box-shadow: none;
-	border-radius: 0px;}
+}

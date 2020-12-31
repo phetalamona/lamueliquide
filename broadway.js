@@ -2,7 +2,28 @@ $(".couv").fadeOut(2000);
 $(".edito").click(function(){
 	$(".edito").fadeOut(2000);
 });
-
+//zoom
+function myFunction() {
+var x = document.getElementsByClassName("scroller");
+var i;
+for (i = 0; i < x.length; i++) {
+x[i].style.zoom = "200%";
+}
+}
+function myFunction2() {
+var x = document.getElementsByClassName("scroller");
+var i;
+for (i = 0; i < x.length; i++) {
+x[i].style.zoom = "20%";
+}
+}
+function myFunction3() {
+var x = document.getElementsByClassName("scroller");
+var i;
+for (i = 0; i < x.length; i++) {
+x[i].style.zoom = "100%";
+}
+}
 //Magie menu
 var clicks = 0;
 $(".burger").click(function(){

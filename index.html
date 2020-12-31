@@ -33,7 +33,10 @@ C'est pour cela que notre première mu(e)tation est liquide.
     <h1 class="lamue"><b>L</b>a&nbsp<b>M</b>ue</h1>
     <h1 class="liquide">n<sup>o</sup> liquide</h1>
     <!-- BURGER -->
-    <div class="burger"><img src="burger-mue.svg" width="40px"/></div>
+    <div class="burger"><img src="burger-mue.svg" width="40px"/></div><br>
+      <div id="zoomburger" style="color: black"><button id="zoommoins" onclick="myFunction2()" style="width: 15px;height: 15px"></button>
+    <button id="zoom" onclick="myFunction3()" style="width: 20px;height: 20px"></button>
+    <button id="zoomplus" onclick="myFunction()" style="width: 25px;height:25px"></button></div>
     <!-- BOOKMARKS ARTISTES -->
     <ul class="bookmarks">
       <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#adelie'),400,-100,-100,IScroll.utils.ease.circular)">Adélie.gir</a></li>
@@ -48,9 +51,7 @@ C'est pour cela que notre première mu(e)tation est liquide.
       <!-- on call direct ds l'html (élément,temps,offsetX,offsetY,easing) -->
       <!-- LIEN OURS -->
       <a class="lien-ours">infos</a>
-       <div id="zoomburger" style="color: var(--ivoire)">échelle <button div="zoommoins" onclick="myFunction2()" style="width: 15px;height: 15px"></button>
-      <button div="zoom" onclick="myFunction3()" style="width: 20px;height: 20px"></button>
-      <button div="zoomplus" onclick="myFunction()" style="width: 25px;height:25px"></button></div>
+
     </ul>
     <ul class="bookmarksweb">
       <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#adelie'),400,-100,-100,IScroll.utils.ease.circular)">Adélie.gir</a></li>
@@ -90,7 +91,6 @@ C'est pour cela que notre première mu(e)tation est liquide.
   <div class="navigation">
     <div class="wrapper">
       <div class="scroller">
-
         <!-- images ici -->
         <img class="image"  id="adelie" data-meta="<a href='https://www.instagram.com/adelie.gir/'>@adelie.gir</a>" src="assets\adelie_gif.gif"></img>
         <img class="image" id="carlaetco" data-meta="<a href='https://www.instagram.com/carlaetco/'>@carlaetco</a>" src="assets\lillyliquide.jpg"></img>
@@ -111,27 +111,7 @@ C'est pour cela que notre première mu(e)tation est liquide.
 <script type="text/javascript" src="broadway.js"></script>
 <script type="text/javascript" src="canvas.js"></script>
 <script>
-    function myFunction() {
-  var x = document.getElementsByClassName("scroller");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.zoom = "200%";
-  }
-}
-function myFunction2() {
-  var x = document.getElementsByClassName("scroller");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.zoom = "50%";
-  }
-}
-function myFunction3() {
-  var x = document.getElementsByClassName("scroller");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.zoom = "100%";
-  }
-}
+
 </script>
 
 
