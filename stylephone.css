@@ -134,7 +134,8 @@
 
 	/*les images-------------------------------*/
 
-	#zoomburger {position:fixed;bottom:3%;left:5%}
+	#zoomburger {display: inline;
+		position:fixed;bottom:3%;left:5%}
 
 #zoomburger button {
 	background: black;
