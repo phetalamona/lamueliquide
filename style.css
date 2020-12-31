@@ -105,7 +105,7 @@ body {
 }
 
 /*TITRE IMG----------------------------*/
-.burger{display: none;}
+.burger{display: none;height:5%}
 .menu-artistes{
 	padding-top:0%;
 	padding-left: 1%;
