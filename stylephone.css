@@ -134,3 +134,8 @@
 
 	/*les images-------------------------------*/
 }
+
+#zoomburger button {background: var(--ivoire);
+	border: 1px solid var(--ivoire);
+	box-shadow: none;
+	border-radius: 0px;}

@@ -284,3 +284,5 @@ body {
 	top: en %;
 	left:en %;
 }*/
+
+button {background: black;border: 1px solid black;box-shadow: none;border-radius: 0px;}
