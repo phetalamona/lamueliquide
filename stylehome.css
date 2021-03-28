@@ -1,0 +1,90 @@
+html{
+  background-color: #E5E5E5;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.intro{
+  position: absolute;
+  width: 753px;
+  height: 409px;
+  left: 1%;
+  top: 1%;
+  font-family: 'Redaction 20';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4vh;
+  line-height: 113%;
+  color: #FFFFFF;
+}
+
+.rond{
+  display: inline-block;
+  width:3.5vh;
+  height:3.5vh;
+  border-radius: 50%;
+}
+
+h2{
+font-family: 'Redaction 20';
+font-style: italic;
+font-weight: normal;
+font-size: 6vh;
+color: #FFFFFF;
+ display: inline;
+ margin-left: 5px;
+}
+
+.liquide{
+  position: absolute;
+  left: 60%;
+  top: 20%;
+}
+.solide{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.gazeux{
+  position: absolute;
+  left: 35%;
+  top: 85%;
+}
+.plasma{
+  position: absolute;
+  left: 15%;
+  top: 70%;
+}
+sup{
+  font-size: 3vh;
+}
+
+a{
+  text-decoration: none;
+  color:none;
+}
+.li{
+  background: #8E00FF;
+}
+.liq:hover{
+  color:#8E00FF;
+}
+.so{
+  background:#040AE3;
+}
+.sol:hover{
+  color:#040AE3;
+}
+.ga{
+  background:white;
+}
+.gaz:hover{}
+
+.pl{
+  background:white;
+}
+.pla:hover{}

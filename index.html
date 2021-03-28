@@ -6,109 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <title>La Mue</title>
 
-  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="stylehome.css">
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="stylephone.css">
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="typo/stylesheet.css">
   <script src="jquery-3.5.0.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="iscroll.js"></script>
 </head>
 
-<body onload="loaded()">
-  <!-- COUV -->
-  <div class="couv"></div>
-  <!-- EDITO -->
-  <div class="edito">
-    <p>
-      La phase liquide est un état de la matière ainsi qu'une forme de fluide.
-Le liquide c'est le magma, la lave, l'hélium II et la pluie. Il prend la forme de son contenant, éternellement adapté.<br>
-Mais comment le décrire, le dessiner autrement qu'en plaçant cet état en opposition au solide? Comment mettre en scène ce qui n'a pas de corps?<br>
-On pourrait alors imaginer que liquide est furtif, coule entre les murs, les pores, s'échappe.
-On pourrait aussi le voir poussé, mis en tension par le vent et des pressions atmosphériques.
-C'est pour cela que notre première mu(e)tation est liquide.
-    </p>
-  </div>
-  <!-- MENU ART -->
-  <div class="menu-artistes">
-    <!-- LOGO MUE -->
-    <h1 class="lamue"><b>L</b>a&nbsp<b>M</b>ue</h1>
-    <h1 class="liquide">n<sup>o</sup> liquide</h1>
-    <!-- BURGER -->
-    <div class="burger"><img src="burger-mue.svg" width="40px"/></div><br>
-      <div id="zoomburger" style="color: black"><button id="zoommoins" onclick="myFunction2()" style="width: 15px;height: 15px"></button>
-    <button id="zoom" onclick="myFunction3()" style="width: 20px;height: 20px"></button>
-    <button id="zoomplus" onclick="myFunction()" style="width: 25px;height:25px"></button></div>
-    <!-- BOOKMARKS ARTISTES -->
-    <ul class="bookmarks">
-      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#adelie'),400,-100,-100,IScroll.utils.ease.circular)">Adélie.gir</a></li>
-      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#carlaetco'),400,-100,-100,IScroll.utils.ease.circular)">Lilly Borraz</a></li>
-      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#maude'),400,-300,-50,IScroll.utils.ease.circular)">Maude Lemieux</a></li>
-      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#mina'),400,-100,-100,IScroll.utils.ease.circular)">Mindechat</a></li>
-      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#holder'),400,-100,-100,IScroll.utils.ease.circular)">Drice DdS</a></li>
-      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#phili'),400,-100,-100,IScroll.utils.ease.circular)">Philippine Talamona</a></li>
-      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#marjo'),400,-100,-100,IScroll.utils.ease.circular)">Marjorie Bodet</a></li>
-      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#axel'),400,-100,-100,IScroll.utils.ease.circular)">Groupie Facile</a></li>
-
-      <!-- on call direct ds l'html (élément,temps,offsetX,offsetY,easing) -->
-      <!-- LIEN OURS -->
-      <a class="lien-ours">infos</a>
-
-    </ul>
-    <ul class="bookmarksweb">
-      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#adelie'),400,-100,-100,IScroll.utils.ease.circular)">Adélie.gir</a></li>
-      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#carlaetco'),400,-100,-100,IScroll.utils.ease.circular)">Lilly Borraz</a></li>
-      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#maude'),300,-50,-50,IScroll.utils.ease.circular)">Maude Lemieux</a></li>
-      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#mina'),400,-100,-100,IScroll.utils.ease.circular)">Mindechat</a></li>
-      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#holder'),400,-100,-100,IScroll.utils.ease.circular)">Drice DdS</a></li>
-      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#phili'),400,-100,-100,IScroll.utils.ease.circular)">Philippine Talamona</a></li>
-      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#marjo'),400,-100,-100,IScroll.utils.ease.circular)">Marjorie Bodet</a></li>
-      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#axel'),400,-100,-100,IScroll.utils.ease.circular)">Groupie Facile</a></li>
-      <!-- on call direct ds l'html (élément,temps,offsetX,offsetY,easing) -->
-      <!-- LIEN OURS -->
-                  <!-- zoom-->
-     <div id="zoom"> <button div="zoommoins" onclick="myFunction2()" style="width: 15px;height: 15px"></button>
-      <button div="zoom" onclick="myFunction3()" style="width: 20px;height: 20px"></button>
-      <button div="zoomplus" onclick="myFunction()" style="width: 25px;height:25px"></button></div>
-
-
-    </ul>
-
-
-    <!-- OURS -->
-    <div class="ours">
-      <div class="pours">
-      <h2>Contributeurs·ices</h2>
-      <ol><li><a href='https://www.instagram.com/mindechat/'>Mindechat</a></li><li><a href='https://www.instagram.com/demi_mau/'>Maude Lemieux</a></li><li><a href='https://www.instagram.com/carlaetco/'>Lilly Borraz</a></li><li><a href='https://www.instagram.com/adelie.gir/'>Adelie.gir</a></li><li><a href='https://www.instagram.com/dric_dds/'>Drice Ducongé dos Santos</a></li><li><a href='https://www.instagram.com/philippine.talamona/'>Philippine Talamona</a></li><li><a href='https://www.instagram.com/marjoriebodet/'>Marjorie Bodet</a></li><li><a href='https://www.instagram.com/groupie_facile_/'>Groupie Facile</a></li></ol>
-      <h2>Edition et code</h2>
-      <ol><li>Drice Ducongé dos Santos</li><li>Philippine Talamona</li></ol>
-      <h2>Composition</h2>
-       <ol><li>Redaction <a href='https://www.redaction.us/'>https://www.redaction.us/</a></li></ol>
-      <h2>Contact</h2>
-      <ol><li><a href="mailto: drice-phili@lamue.fun">drice-phili@lamue.fun</a></li><li><a href="https://www.instagram.com/_la.mue/">@la.mue</a></li></ol>
-      </div>
-    </div>
-  </div>
-  <!-- NAV -->
-  <div class="navigation">
-    <div class="wrapper">
-      <div class="scroller">
-        <!-- images ici -->
-        <img class="image"  id="adelie" data-meta="<a href='https://www.instagram.com/adelie.gir/'>@adelie.gir</a>" src="assets\adelie_gif.gif"></img>
-        <img class="image" id="carlaetco" data-meta="<a href='https://www.instagram.com/carlaetco/'>@carlaetco</a>" src="assets\lillyliquide.jpg"></img>
-        <img class="image" id="maude" data-meta="<a href='https://www.instagram.com/demi_mau/'>@demi_mau</a>" src="assets\maude.jpg"></img>
-        <img class="image" id="mina" data-meta="<a href='https://www.instagram.com/mindechat/'>@mindechat</a>" src="assets\LIQUIIIIDE (mindechat) refait.jpg"></img>
-        <div id="holder" ></div>
-        <img class="pjs" src="assets\transparent.png"data-meta="<a href='https://www.instagram.com/dric_dds/'>@dric_dds</a>"></img>
-         <img class="image" id="phili" data-meta="<a href='https://www.instagram.com/philippine.talamona/'>@philippine.talamona</a>" src="assets\liquidephili4.gif"></img>
-         <img class="image" id="marjo" data-meta="<a href='https://www.instagram.com/marjoriebodet/'>@marjoriebodet</a>" src="assets\marjorie.png"></img>
-         <img class="image" id="axel" data-meta="<a href='https://www.instagram.com/groupie_facile_/'>@groupie_facile_</a>" src="assets\liquideaxel2.jpg"></img>
-
-      </div>
-    </div>
-  </div>
+<body>
+  <div class="intro">La Mue est un zine conçu et publié sur le web, par <i>Drice Ducongé dos Santos</i> et <i>Philippine Talamona</i>.</div>
+  <a class="liquide" href="liquide.html"><div class="rond li"></div><h2 class="liq">n<sup>1</sup>liquide</h2></a>
+  <a class="solide" href="solide.html"><div class="rond so"></div><h2 class="sol">n<sup>2</sup>solide</h2></a>
+  <a class="gazeux"><div class="rond ga"></div><h2 class="gaz">n<sup>3</sup>gazeux <sup>(soon)</sup></h2></a>
+  <a class="plasma"><div class="rond pl"></div><h2 class="pla">n<sup>4</sup>plasma <sup>(soon)</sup></h2></a>
 
 </body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
-<script type="text/javascript" src="broadway.js"></script>
 <script type="text/javascript" src="canvas.js"></script>
 <script>
 
