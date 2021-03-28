@@ -1,5 +1,5 @@
 html{
-  background-color: #E5E5E5;
+  animation: color 120s infinite;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -8,6 +8,24 @@ html{
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
+@keyframes color {
+  0% {background-color: #E5E5E5;}
+  33% {background-color: #8E00FF;}
+  66% {background-color:#040AE3;}
+  100% {background-color: #E5E5E5;}
+}
+
+/*
+@keyframes colorga {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+@keyframes colorpl {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+*/
+
 .intro{
   position: absolute;
   width: 753px;
