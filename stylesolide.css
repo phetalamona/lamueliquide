@@ -117,6 +117,7 @@ body {
 	width: 20%;
 }
 
+
 .menu-artistes .cercle{
 	position: relative;
 	vertical-align: top
@@ -266,14 +267,6 @@ body {
 	height: 20%;
 	top:20%;
 	left:80%;
-}
-.pjs,#holder{
-	position: fixed;
-	top:50%;
-	left:10%;
-	height: 500px;
-	width: 500px;
-	border-color: var(--ivoire);
 }
 
 #phili {width:10%;
