@@ -141,10 +141,10 @@ body {
 .solide{
 	z-index: 2;
 	position: fixed;
-	right:2%;
-	top:2%;
+	right:1%;
+	top:1%;
 	color:var(--black);
-	font-size: 45pt;
+	font-size: 5vh;
 	font-family: 'Redaction 35';
 	font-weight: normal;
 	font-style: italic;
@@ -288,5 +288,12 @@ body {
 	top: en %;
 	left:en %;
 }*/
-
+.cercle{
+	background: var(--ivoire);
+	margin-left: 10px;
+	margin-top: 10px;
+	width:3.5vh;
+	height:3.5vh;
+	border-radius: 50%;
+}
 button {background: black;border: 1px solid black;box-shadow: none;border-radius: 0px;}

@@ -15,17 +15,6 @@ html{
   100% {background-color: #E5E5E5;}
 }
 
-/*
-@keyframes colorga {
-  from {background-color: red;}
-  to {background-color: blue;}
-}
-@keyframes colorpl {
-  from {background-color: red;}
-  to {background-color: blue;}
-}
-*/
-
 .intro{
   position: absolute;
   width: 753px;
