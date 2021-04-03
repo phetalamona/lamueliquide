@@ -57,7 +57,35 @@ $(".lien-ours").click(function(){
 	$(".ours").toggle(500,function(){});
 	clicks=2;
 });
-
+var clique=0;
+$('.cercle').click(function(){
+	if(clique==0){
+	$(".menuweb").animate({
+		width:"25%"
+	},500, function(){});
+	$(".depli").slideToggle(500, function(){});
+	$(".wrapper").animate({
+		width:"75%"
+	},500, function(){});
+	$(".bookmarksweb").animate({
+		left:"26%"
+	},500, function(){});
+	clique=1;
+	}
+	else if(clique==1){
+	$(".menuweb").animate({
+		width:"3%"
+	},500, function(){});
+	$(".depli").slideToggle(500, function(){});
+	$(".wrapper").animate({
+		width:"96%"
+	},500, function(){});
+	$(".bookmarksweb").animate({
+		left:"5%"
+	},500, function(){});
+	clique=0;
+	}
+});
 function divMaker(w,h,x,y,d){
 	//permet de créer une div
 	var newDiv = document.createElement("div");

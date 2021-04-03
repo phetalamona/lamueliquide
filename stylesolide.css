@@ -80,7 +80,7 @@ body {
 }
 
 .scroller {/*"carte" du scroll*/
-	position: absolute;
+	position: relative;
 	z-index: 1;
 	width: 4000px;
 	height: 4000px;
@@ -105,7 +105,13 @@ body {
 }
 
 /*TITRE IMG----------------------------*/
-.burger{display: none;height:5%}
+.burger{display: none;
+	background: var(--ivoire);
+	margin-left: 10px;
+	margin-top: 10px;
+	width:3.5vh;
+	height:3.5vh;
+	border-radius: 50%;}
 
 #zoomburger {display: none;height:5%}
 
@@ -118,11 +124,7 @@ body {
 }
 
 
-.menu-artistes .cercle{
-	position: relative;
-	vertical-align: top
-	margin:0px;
-}
+
 .menu-artistes .lamue{
 	position: relative;
 	vertical-align: top
@@ -290,10 +292,47 @@ body {
 }*/
 .cercle{
 	background: var(--ivoire);
-	margin-left: 10px;
+	margin-left: 30%;
 	margin-top: 10px;
-	width:3.5vh;
-	height:3.5vh;
+	width: 3.5vh;
+	height: 3.5vh;
 	border-radius: 50%;
 }
+.cercle:hover{
+	cursor:pointer;
+}
+.cercleweb{display:none;	background: var(--ivoire);
+	margin-left: 30%;
+	margin-top: 10px;
+	width: 3.5vh;
+	height: 3.5vh;
+	border-radius: 50%;
+}
+	@media only screen and (max-width: 800px){
+		.cercleweb{display: block;}
+		.solide{display: none;}
+}
 button {background: black;border: 1px solid black;box-shadow: none;border-radius: 0px;}
+
+.menuweb{
+	position: absolute;
+	width: 3%;
+	height: 100vh;
+	background-color: var(--violet);
+	top: 0;
+	left: 0px;
+	display: flex;
+	flex-direction: row;
+}
+.bandeauweb{
+	width: 20%;
+	display: inline-flex;
+	flex: 1;
+}
+.depli{
+	display:none;
+	position: relative;
+	background-color: var(--violet);
+	height: 100vh;
+	width:85%;
+}
