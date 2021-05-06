@@ -63,7 +63,7 @@ $('.cercle').click(function(){
 	$(".menuweb").animate({
 		width:"25%"
 	},500, function(){});
-	$(".depli").slideToggle(500, function(){});
+	$(".depli").slideToggle(800, function(){});
 	$(".wrapper").animate({
 		width:"75%"
 	},500, function(){});
@@ -76,7 +76,7 @@ $('.cercle').click(function(){
 	$(".menuweb").animate({
 		width:"3%"
 	},500, function(){});
-	$(".depli").slideToggle(500, function(){});
+	$(".depli").slideToggle(800, function(){});
 	$(".wrapper").animate({
 		width:"96%"
 	},500, function(){});

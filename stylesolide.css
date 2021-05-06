@@ -165,7 +165,7 @@ body {
 	top:-2.5%;
 	left:5%;
 	padding:0%;
-	font-size: 2.3vw;
+	font-size: 1.8vw;
 	background-color: transparent;
 	font-family: 'Redaction 20';
 }
@@ -195,46 +195,11 @@ body {
 	color: black;
 }
 /*OURS-------------------------------*/
-.pours{margin-top:-7%;}
-.pours h2:first-of-type{
-	margin-top:0px;
-}
-.pours h2{
-	margin-top:20px;
-	margin-bottom: 10px;
-	font-size: 18pt;
-	color: var(--ivoire);
-	font-family: 'Redaction 50';
-	font-weight: normal;
-}
-.pours ol{
-	display: block;
-	font-size: 13pt;
-	padding: 0px;
-	color: var(--ivoire);
-	font-family: 'Redaction';
-	font-weight: normal;
-	margin:0px;
-	list-style: none;
+.pours{
+	visibility: hidden;
+	display: none;
 }
 
-	.pours ol li a{
-		color:var(--ivoire);
-		  font-family:'Redaction 20';
-		text-decoration: none;
-	}
-	.pours ol li a:hover{
-		color:var(--ivoire);
-		  font-family:'Redaction 50';
-			font-style: italic;
-		text-decoration: none;
-	}
-	.pours ol li a:active{
-		color:black;
-		  font-family:'Redaction 50';
-			font-style: italic;
-		text-decoration: none;
-	}
 /*les images-------------------------------*/
 .temp a{
 	color: var(--ivoire);
@@ -250,7 +215,7 @@ body {
   mix-blend-mode:darken;
   position: fixed;
 }
-#agathe{
+#agathet{
 	width: 10%;
 	top:5%;
 	left:20%;
@@ -260,15 +225,29 @@ body {
 	top:45%;
 	left:55%;
 }
+
+#xavier{
+	width: 13%;
+	top:45%;
+	left:55%;
+}
+
+#coralie{
+	width: 13%;
+	top:45%;
+	left:55%;
+}
+
+#chiara{
+	width: 13%;
+	top:45%;
+	left:55%;
+}
+
 #valcotin{
 	width: 15%;
-	top:20%;
+	top:50%;
 	left:30%;
-}
-#carlaetco{
-	height: 20%;
-	top:20%;
-	left:80%;
 }
 
 #phili {width:10%;
@@ -281,9 +260,64 @@ body {
 	left:55%;
 }
 
-#axel {width:10%;
-	bottom:10%;
-	right:10%;
+#agathes{
+	width: 13%;
+	top:45%;
+	left:55%;
+}
+
+#neve{
+	width: 13%;
+	top:45%;
+	left:55%;
+}
+
+#zoe{
+	width: 13%;
+	top:45%;
+	left:55%;
+}
+
+#chloe{
+	width: 13%;
+	top:45%;
+	left:55%;
+}
+
+#lestruss{
+	width: 13%;
+	top:45%;
+	left:55%;
+}
+
+#jon{
+	width: 13%;
+	top:45%;
+	left:55%;
+}
+
+#alma{
+	width: 13%;
+	top:45%;
+	left:55%;
+}
+
+#laetitia{
+	width: 13%;
+	top:45%;
+	left:55%;
+}
+
+#lilly{
+	width: 13%;
+	top:45%;
+	left:55%;
+}
+
+#valcotin{
+	width: 13%;
+	top:45%;
+	left:55%;
 }
 /*#image{
 	width: en %; ou height
@@ -291,9 +325,10 @@ body {
 	left:en %;
 }*/
 .cercle{
+	z-index: 2;
 	background: var(--ivoire);
-	margin-left: 30%;
-	margin-top: 10px;
+	margin-left: 4.5%;
+	margin-top: -10%;
 	width: 3.5vh;
 	height: 3.5vh;
 	border-radius: 50%;
@@ -335,4 +370,43 @@ button {background: black;border: 1px solid black;box-shadow: none;border-radius
 	background-color: var(--violet);
 	height: 100vh;
 	width:85%;
+}
+details:first-of-type{
+	margin-top: 20%;
+	}
+summary::marker {
+  content: "";
+}
+details.oursvrai{
+	margin-left:17%;
+	font-size: 3vh;
+	color: var(--ivoire);
+	font-family: 'Redaction 10';
+	text-align: center;
+
+
+}
+.oursvrai ol{
+	list-style: none;
+	text-align: center;
+	padding: 0px;
+	margin-top: 6px;
+	margin-bottom: 5%;
+	line-height: 97%;
+}
+
+.oursvrai ol li a,.oursvrai ol li{
+	decoration: none;
+	text-decoration: none;
+	font-size: 2.4vh;
+	color: var(--ivoire);
+	font-family: 'Redaction 35';
+}
+.oursvrai:hover{
+	cursor: pointer;
+}
+.oursvrai ol li a:hover{
+	font-style: italic;
+	cursor: pointer;
+
 }
