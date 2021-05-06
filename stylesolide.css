@@ -216,20 +216,20 @@ body {
   position: fixed;
 }
 #agathet{
-	width: 10%;
-	top:5%;
-	left:20%;
+	width: 13%;
+	top:2%;
+	left:7%;
 }
 #emilie{
 	width: 13%;
-	top:45%;
-	left:55%;
+	top:30%;
+	left:20%;
 }
 
 #xavier{
 	width: 13%;
-	top:45%;
-	left:55%;
+	bottom:5%;
+	left:40%;
 }
 
 #coralie{
@@ -240,18 +240,18 @@ body {
 
 #chiara{
 	width: 13%;
-	top:45%;
-	left:55%;
+	top:55%;
+	left:3%;
 }
 
 #valcotin{
 	width: 15%;
-	top:50%;
+	bottom:5%;
 	left:30%;
 }
 
 #phili {width:10%;
-	bottom:15%;
+	bottom:30%;
 	left:35%;
 }
 
@@ -262,62 +262,62 @@ body {
 
 #agathes{
 	width: 13%;
-	top:45%;
-	left:55%;
+	top:25%;
+	left:45%;
 }
 
 #neve{
 	width: 13%;
-	top:45%;
-	left:55%;
+	bottom:20%;
+	right:6%;
 }
 
 #zoe{
 	width: 13%;
-	top:45%;
-	left:55%;
+	top:2%;
+	right:5%;
 }
 
 #chloe{
 	width: 13%;
 	top:45%;
-	left:55%;
+	left:5%;
 }
 
-#lestruss{
+#seb{
 	width: 13%;
-	top:45%;
-	left:55%;
+	bottom:5%;
+	right:15%;
 }
 
 #jon{
 	width: 13%;
-	top:45%;
-	left:55%;
+	bottom:40%;
+	right:2%;
 }
 
 #alma{
 	width: 13%;
-	top:45%;
-	left:55%;
+	top:10%;
+	left:30%;
 }
 
 #laetitia{
 	width: 13%;
-	top:45%;
-	left:55%;
+	bottom:15%;
+	right:30%;
 }
 
 #lilly{
 	width: 13%;
-	top:45%;
-	left:55%;
+	top:42%;
+	left:22%;
 }
 
 #valcotin{
 	width: 13%;
-	top:45%;
-	left:55%;
+	bottom:10%;
+	left:20%;
 }
 /*#image{
 	width: en %; ou height
