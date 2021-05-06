@@ -39,6 +39,7 @@
     background-color: var(--violet);
     padding-top: 0%;
     padding-left: 12px;
+		overflow-y: auto;
 	}
   .menu-artistes ul{
     display: none;
@@ -61,6 +62,7 @@
     font-family: 'Redaction 50';
     font-weight: normal;
   }
+
   .menu-artistes .liquide{
     display: inline-flex;
     color:var(--black);
@@ -90,7 +92,7 @@
 		left: 0%;
 		top: 0%;
 		background-color: transparent;
-		font-family: 'Redaction 20'
+		font-family: 'Redaction 20';
 	}
 
 	.bookmarks li {
@@ -131,6 +133,51 @@
 		top: 0%;
 		background-color: transparent;
 	}
+	.pours{margin-top:7%;}
+	.pours h2:first-of-type{
+		margin-top:0px;
+	}
+	.pours h2{
+		margin-top:20px;
+		margin-bottom: 10px;
+		font-size: 18pt;
+		color: var(--ivoire);
+		font-family: 'Redaction 50';
+		font-weight: normal;
+	}
+	.pours ol{
+		display: block;
+		font-size: 13pt;
+		padding: 0px;
+		color: var(--ivoire);
+		font-family: 'Redaction';
+		font-weight: normal;
+		margin:0px;
+		list-style: none;
+	}
+
+		.pours ol li a{
+			color:var(--ivoire);
+			  font-family:'Redaction 20';
+			text-decoration: none;
+		}
+		.pours ol li a:hover{
+			color:var(--ivoire);
+			  font-family:'Redaction 50';
+				font-style: italic;
+			text-decoration: none;
+		}
+		.pours ol li a:active{
+			color:black;
+			  font-family:'Redaction 50';
+				font-style: italic;
+			text-decoration: none;
+		}
+
+		.pours{
+			visibility: visible;
+			display: block;
+		}
 
 	/*les images-------------------------------*/
 
