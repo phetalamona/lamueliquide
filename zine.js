@@ -63,26 +63,28 @@ $('.cercle').click(function(){
 	$(".menuweb").animate({
 		width:"25%"
 	},500, function(){});
-	$(".depli").slideToggle(800, function(){});
+	$(".depli").slideToggle(500, function(){});
 	$(".wrapper").animate({
 		width:"75%"
 	},500, function(){});
 	$(".bookmarksweb").animate({
 		left:"26%"
 	},500, function(){});
+	$(".oursvrai").fadeIn(2000,function(){});
 	clique=1;
 	}
 	else if(clique==1){
 	$(".menuweb").animate({
 		width:"3%"
 	},500, function(){});
-	$(".depli").slideToggle(800, function(){});
+	$(".depli").slideToggle(500, function(){});
 	$(".wrapper").animate({
 		width:"96%"
 	},500, function(){});
 	$(".bookmarksweb").animate({
 		left:"5%"
 	},500, function(){});
+	$(".oursvrai").fadeOut(2000,function(){});
 	clique=0;
 	}
 });

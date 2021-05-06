@@ -325,13 +325,13 @@ body {
 	left:en %;
 }*/
 .cercle{
-	z-index: 2;
 	background: var(--ivoire);
-	margin-left: 4.5%;
-	margin-top: -10%;
-	width: 3.5vh;
-	height: 3.5vh;
-	border-radius: 50%;
+left: 0.8%;
+TOP: 1%;
+width: 3.5vh;
+height: 3.5vh;
+border-radius: 50%;
+position: fixed;
 }
 .cercle:hover{
 	cursor:pointer;
@@ -377,6 +377,9 @@ details:first-of-type{
 summary::marker {
   content: "";
 }
+.oursvrai{
+	display: none;
+}
 details.oursvrai{
 	margin-left:17%;
 	font-size: 3vh;
@@ -394,7 +397,9 @@ details.oursvrai{
 	margin-bottom: 5%;
 	line-height: 97%;
 }
-
+summary{
+ font-weight: bold;
+}
 .oursvrai ol li a,.oursvrai ol li{
 	decoration: none;
 	text-decoration: none;
