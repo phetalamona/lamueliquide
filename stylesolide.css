@@ -325,6 +325,15 @@ body {
 	bottom:50%;
 	left:70%;
 }
+.pjs,#holder{
+	position: fixed;
+	top:83%;
+	left:3%;
+	height: 14%;
+	width: auto;
+	mix-blend-mode:darken;
+
+}
 /*#image{
 	width: en %; ou height
 	top: en %;
