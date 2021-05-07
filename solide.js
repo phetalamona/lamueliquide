@@ -7,7 +7,7 @@ var cnv=createCanvas(600,600);cnv.parent("holder");  p = createGraphics(600,600,
 
 function draw() {
 //background(233,243,245,10);
-  if(frameCount%25==0){p.background(233,243,245,40);}
+  if(frameCount%60==0){p.background(233,243,245,40);}
   for(i=0;i<40;i+=10){
   push();
   p.rotateX(radians(460));
