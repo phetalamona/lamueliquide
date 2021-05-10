@@ -28,8 +28,7 @@
     font-style: italic;
   }
 	/*SCROLL--------------------------------------*/
-	.wrapper{width:100%;
-	overflow: hidden;}
+	.wrapper{width:100%;}
 	/*TITRE IMG----------------------------*/
 	.menu-artistes{
     z-index: 3;

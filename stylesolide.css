@@ -103,6 +103,7 @@ body {
 	-ms-text-size-adjust: none;
 	-o-text-size-adjust: none;
 	text-size-adjust: none;
+	overflow: hidden;
 }
 
 /*TITRE IMG----------------------------*/
