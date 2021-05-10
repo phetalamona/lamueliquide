@@ -30,8 +30,6 @@
        // coordinates when the UI is updated. It also simplifies our calculations as these
        // coordinates are without respect to the current scale.
 
-       var imgWidth = null;
-       var imgHeight = null;
        var viewportWidth = null;
        var viewportHeight = null;
        var scale = null;
@@ -44,33 +42,6 @@
        var lastY = 0;
        var pinchCenter = null;
 
-       // We need to disable the following event handlers so that the browser doesn't try to
-       // automatically handle our image drag gestures.
-       var disableImgEventHandlers = function () {
-         var events = ['onclick', 'onmousedown', 'onmousemove', 'onmouseout', 'onmouseover',
-                       'onmouseup', 'ondblclick', 'onfocus', 'onblur'];
-
-         events.forEach(function (event) {
-           img[event] = function () {
-             return false;
-           };
-         });
-       };
-
-       // Traverse the DOM to calculate the absolute position of an element
-       var absolutePosition = function (el) {
-         var x = 0,
-           y = 0;
-
-         while (el !== null) {
-           x += el.offsetLeft;
-           y += el.offsetTop;
-           el = el.offsetParent;
-         }
-
-         return { x: x, y: y };
-       };
-
        var restrictScale = function (scale) {
          if (scale < MIN_SCALE) {
            scale = MIN_SCALE;
@@ -80,19 +51,6 @@
          return scale;
        };
 
-       var restrictRawPos = function (pos, viewportDim, imgDim) {
-         if (pos < viewportDim/scale - imgDim) { // too far left/up?
-           pos = viewportDim/scale - imgDim;
-         } else if (pos > 0) { // too far right/down?
-           pos = 0;
-         }
-         return pos;
-       };
-
-       var updateLastPos = function (deltaX, deltaY) {
-         lastX = x;
-         lastY = y;
-       };
 
        var translate = function (deltaX, deltaY) {
          // We restrict to the min of the viewport width/height or current width/height as the
@@ -101,7 +59,7 @@
          var newX = restrictRawPos(lastX + deltaX/scale,
                                    Math.min(viewportWidth, curWidth), imgWidth);
          x = newX;
-         img.style.marginLeft = Math.ceil(newX*scale) + 'px';
+         scroller.style.marginLeft = Math.ceil(newX*scale) + 'px';
 
          var newY = restrictRawPos(lastY + deltaY/scale,
                                    Math.min(viewportHeight, curHeight), imgHeight);
@@ -112,28 +70,16 @@
        var zoom = function (scaleBy) {
          scale = restrictScale(lastScale*scaleBy);
 
-         curWidth = imgWidth*scale;
-         curHeight = imgHeight*scale;
+         curWidth = scrollerWidth*scale;
+         curHeight = scrollerHeight*scale;
 
-         img.style.width = Math.ceil(curWidth) + 'px';
-         img.style.height = Math.ceil(curHeight) + 'px';
+         scroller.style.width = Math.ceil(curWidth) + 'px';
+         scroller.style.height = Math.ceil(curHeight) + 'px';
 
          // Adjust margins to make sure that we aren't out of bounds
          translate(0, 0);
        };
 
-       var rawCenter = function (e) {
-         var pos = absolutePosition(container);
-
-         // We need to account for the scroll position
-         var scrollLeft = window.pageXOffset ? window.pageXOffset : document.body.scrollLeft;
-         var scrollTop = window.pageYOffset ? window.pageYOffset : document.body.scrollTop;
-
-         var zoomX = -x + (e.center.x - pos.x + scrollLeft)/scale;
-         var zoomY = -y + (e.center.y - pos.y + scrollTop)/scale;
-
-         return { x: zoomX, y: zoomY };
-       };
 
        var updateLastScale = function () {
          lastScale = scale;
@@ -178,19 +124,15 @@
 
        var onLoad = function () {
 
-         img = document.getElementById('agathet');
-         container = img.parentElement;
+         wrapper = document.getElementsByClassName('scroller');
+         container = document.getElementsByClassName('wrapper');
 
-         disableImgEventHandlers();
-
-         imgWidth = img.width;
-         imgHeight = img.height;
-         viewportWidth = img.offsetWidth;
-         scale = viewportWidth/imgWidth;
+         viewportWidth = scroller.offsetWidth;
+         scale = viewportWidth/wrapperWidth;
          lastScale = scale;
-         viewportHeight = img.parentElement.offsetHeight;
-         curWidth = imgWidth*scale;
-         curHeight = imgHeight*scale;
+         viewportHeight = wrapper.offsetHeight;
+         curWidth = wrapperWidth*scale;
+         curHeight = wrapperHeight*scale;
 
          var hammer = new Hammer(container, {
            domEvents: true
