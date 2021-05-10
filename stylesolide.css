@@ -77,7 +77,7 @@ body {
 	background: var(--ivoire);
 	overflow: hidden;
 	border: 0px solid #8e00ff;
- touch-action: pinch-zoom;
+ touch-action: pan-right pinch-zoom;
 }
 
 .scroller {/*"carte" du scroll*/
