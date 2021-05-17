@@ -46,7 +46,7 @@
 
 	var pinchZoom = __webpack_require__(1)
 	var log = document.getElementById('log')
-	var el = document.querySelector('.wrapper')
+	var el = document.querySelector('.scroller')
 	var pzoom = pinchZoom(el, {
 	  tapreset: true,
 	  draggable: true,
