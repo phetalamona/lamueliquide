@@ -29,7 +29,6 @@
   }
 	/*SCROLL--------------------------------------*/
 	.wrapper{width:100%;}
-	.scroller{zoom:85%;touch-action: pinch-zoom;}
 	/*TITRE IMG----------------------------*/
 	.menu-artistes{
     z-index: 3;
