@@ -289,3 +289,10 @@ body {
 }*/
 
 button {background: black;border: 1px solid black;box-shadow: none;border-radius: 0px;}
+.liquide a{
+	text-decoration: none;
+	color:var(--ivoire);
+}
+.liquide a:hover{
+	color:black;
+}

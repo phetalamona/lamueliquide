@@ -438,3 +438,10 @@ summary{
 	cursor: pointer;
 
 }
+.solide a{
+	text-decoration: none;
+	color:black;
+}
+.solide a:hover{
+	color:var(--violet);
+}
