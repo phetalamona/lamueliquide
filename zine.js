@@ -138,3 +138,7 @@ function loaded () {
 		mouseWheel: true,
 	});
 }
+var audio = document.getElementById("lson");
+$("#laetitia").click(function(){
+	new Audio("assets_solide/audiolaetitia.mp3").play();
+});

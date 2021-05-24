@@ -265,7 +265,7 @@ body {
 #agathes{
 	width: 13.5%;
 	top:25%;
-	left:45%;
+	left:48%;
 }
 
 #neve{
@@ -299,9 +299,15 @@ body {
 }
 
 #alma{
-	width: 13%;
+	width: 12.01%;
 	top:10%;
-	left:30%;
+	left:25%;
+}
+#almagif{
+	width:12%;
+	top:10%;
+	left:35%;
+mix-blend-mode: normal;
 }
 
 #laetitia{
