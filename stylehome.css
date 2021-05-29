@@ -95,3 +95,8 @@ a{
   background:white;
 }
 .pla:hover{}
+  @media only screen and (max-width: 800px){
+    .intro{
+      width:auto;
+    }
+}
