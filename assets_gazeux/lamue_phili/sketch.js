@@ -41,7 +41,7 @@ class Particle {
 let particles = [];
 
 function setup() {
-  createCanvas(720, 400);
+  var cnvphi=createCanvas(720, 400);cnv.parent("holderphili");
   for(let i = 0;i<width/10;i++){
     particles.push(new Particle());
   }
