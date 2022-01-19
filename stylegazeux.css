@@ -440,7 +440,7 @@ summary{
 }
 .gazeux a{
 	text-decoration: none;
-	color:black;
+	color:var(--texte);
 }
 .gazeux a:hover{
 	color:var(--violet);
