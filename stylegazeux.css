@@ -368,7 +368,7 @@ position: fixed;
 }
 	@media only screen and (max-width: 800px){
 		.cercleweb{display: block;}
-		.solide{display: none;}
+		.gazeux{display: none;}
 }
 button {background: var(--texte);border: 1px solid var(--texte);box-shadow: none;border-radius: 0px;}
 
