@@ -220,77 +220,83 @@ body {
 }
 
 #agathe{
-	width: 13%;
-	top:2%;
-	left:7%;
+	width: 24%;
+	bottom:25%;
+	left:40%;
 }
 
 #alicericci{
-	width: 8%;
-	top:20%;
-	left:10%;
+	width: 20%;
+	top:7%;
+	left:9%;
 }
 
 #aurelia{
 	width: 13%;
-	top:80%;
-	left:30%;
+	bottom:10%;
+	right:15%;
 }
 
 #claire{
-	width: 13%;
+	width: 10%;
 	top:2%;
 	left:40%;
 }
 
 #guillaume{
-	width: 13%;
+	width: 18%;
 	top:50%;
-	left:50%;
+	right:5%;
 }
 #julien{
-	width: 13%;
-	top:90%;
-	left:60%;
+	width: 8%;
+	bottom:6%;
+	left:40%;
 }
 #lilly{
-	width: 13%;
-	top:15%;
+	width: 12%;
+	top:25%;
 	left:2%;
 }
 #margo{
-	width: 13%;
-	top:30%;
-	left:27%;
+	width: 17%;
+	top:35%;
+	left:30%;
 }
 #deux08heures{
-	width: 13%;
-	top:32%;
-	left:77%;
+	width: 18%;
+	top:5%;
+	right:15%;
 }
 #laetitiagaz{
-	width: 13%;
+	width: 8%;
 	top:42%;
 	left:17%;
 }
 #valcotin{
-	width: 13%;
-	top:70%;
-	left:73%;
+	width: 7%;
+	bottom:0%;
+	right:0%;
+}
+
+#haraka{
+	position: fixed;
+	top:25%;
+	left:60%;
 }
 
 .pjs,#holderdrice{
 	position: fixed;
 	top:83%;
 	height: 10%;
-	left:20%;
+	left:15%;
 	width: auto;
 }
 
 .pjs2,#holderphili{
 	position: fixed;
-	top:20%;
-	left:83%;
+	top:23%;
+	left:80%;
 	height: 400px;
 	width: 720px;
 }
@@ -301,12 +307,14 @@ body {
   background-image: url('assets_gazeux/clara_vermersch/gazeuxfinal.jpg');
   background-size: cover;
   position: relative;
+	left:5%;
+
 }
 
 .audioContainer audio{
   position: absolute;
   bottom: 0;
-  width: 100%
+  width: 100%;
 }
 
 .pjs::before,#holderdrice::before {
@@ -317,7 +325,7 @@ body {
 	position: fixed;
 	top:83%;
 	height: 500px;
-	left:20%;
+	left:15%;
 	width: 500px;
 
 }
@@ -330,7 +338,7 @@ body {
 	position: fixed;
 	top:83%;
 	height: 500px;
-	left:20%;
+	left:15%;
 	width: 500px;
 }
 /*#image{
@@ -361,7 +369,7 @@ position: fixed;
 		.cercleweb{display: block;}
 		.solide{display: none;}
 }
-button {background: black;border: 1px solid black;box-shadow: none;border-radius: 0px;}
+button {background: var(--texte);border: 1px solid var(--texte);box-shadow: none;border-radius: 0px;}
 
 .menuweb{
 	position: absolute;
@@ -436,3 +444,4 @@ summary{
 .gazeux a:hover{
 	color:var(--violet);
 }
+.zoom
