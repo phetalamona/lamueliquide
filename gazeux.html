@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <title>La Mue | Gazeux</title>
+
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="stylegazeux.css">
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="stylegazeuxphone.css">
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="typo/stylesheet.css">
+  <script src="jquery-3.5.0.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="iscroll.js"></script>
+  <script>
+window.onload = function() {
+  var context = new AudioContext();
+}
+</script>
+</head>
+
+<body onload="loaded()">
+  <!-- COUV -->
+  <div class="couv"></div>
+  <!-- EDITO -->
+  <div class="edito">
+    <p>
+
+    </p>
+  </div>
+
+  <!-- MENU ART -->
+  <div class="menu-artistes">
+    <!-- LOGO MUE -->
+    <!--  <h1 class="lamue"><b>L</b>a&nbsp<b>M</b>ue</h1>-->
+    <!-- NUMERO SOLIDE -->
+    <div class="solide"><a href="index.html">n<sup>o</sup>2 solide</a></div>
+    <!-- BURGER -->
+    <div class="burger"></div><br>
+    <div id="zoomburger" style="color: black"><button id="zoommoins" onclick="myFunction2()" style="width: 15px;height: 15px"></button>
+<button id="zoom" onclick="myFunction3()" style="width: 20px;height: 20px"></button>
+    <button id="zoomplus" onclick="myFunction()" style="width: 25px;height:25px"></button></div>
+    <!-- BOOKMARKS ARTISTES -->
+
+    <ul class="bookmarks">
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-250,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-300,-40,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-280,-0,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-300,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-300,-0,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-300,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-200,-150,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-300,-50,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-50,-0,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-100,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-100,-300,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'), 400,-250,-300,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'), 400,-100,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'), 400,-100,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-100,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'), 400,-300,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'), 400,-300,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a class="jumpto" href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-100,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-100,-100,IScroll.utils.ease.circular)"></a></li>
+
+      <!-- on call direct ds l'html (élément,temps,offsetX,offsetY,easing) -->
+      <!-- LIEN OURS -->
+      <a class="lien-ours">infos</a>
+    </ul>
+    <ul class="bookmarksweb">
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-250,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-300,-40,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-280,-0,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-300,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-300,-0,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-300,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-200,-150,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-300,-50,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-50,-0,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-100,-300,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-250,-300,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-100,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-100,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-100,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-100,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-300,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'), 400,-300,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#),400,-100,-100,IScroll.utils.ease.circular)"></a></li>
+      <li><a href="javascript:myScroll.scrollToElement(document.querySelector('#'),400,-100,-100,IScroll.utils.ease.circular)"></a></li>
+<!-- zoom
+      <button onclick="zoomIn()">Zoom In</button>
+      <button onclick="zoomOut()">Zoom Out</button>
+-->
+      <div id="zoom"> <button div="zoommoins" onclick="myFunction2()" style="width: 15px;height: 15px"></button>
+      <button div="zoom" onclick="myFunction3()" style="width: 20px;height: 20px"></button>
+      <button div="zoomplus" onclick="myFunction()" style="width: 25px;height:25px"></button></div>
+      <!-- on call direct ds l'html (élément,temps,offsetX,offsetY,easing) -->
+      <!-- LIEN OURS -->
+      <!-- zoom-->
+    </ul>
+    <!-- OURS TELEPHONE-->
+    <div class="ours">
+      <div class="pours">
+      <h2>Contributeurs·ices</h2>
+      <ol>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+      <li><a href='https://www.instagram.com/'></a></li>
+
+    </ol>
+      <h2>Edition et code</h2>
+      <ol><li>Drice Ducongé dos Santos</li><li>Philippine Talamona</li></ol>
+      <h2>Composition</h2>
+       <ol><li>Redaction <a href='https://www.redaction.us/'>https://www.redaction.us/</a></li></ol>
+      <h2>Contact</h2>
+      <ol><li><a href="mailto: drice-phili@lamue.fun">drice-phili@lamue.fun</a></li><li><a href="https://www.instagram.com/_la.mue/">@la.mue</a></li></ol>
+      </div>
+    </div>
+    <!-- OURS TELEPHONE-->
+
+  </div>
+  <div class="menuweb">
+    <!-- PASTILLE -->
+    <div class="depli">
+      <details class="oursvrai">
+        <summary>
+          Contributeurs·ices
+        </summary>
+        <ol>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+          <li><a href='https://www.instagram.com/'></a></li>
+        </ol>
+      </details>
+      <details class="oursvrai">
+        <summary>
+          Edition et code
+        </summary>
+        <ol><li>Drice Ducongé dos Santos</li><li>Philippine Talamona</li></ol>
+      </details>
+      <details class="oursvrai">
+        <summary>
+          Crédits
+        </summary>
+        <ol><li>Redaction <a href='https://www.redaction.us/'>https://www.redaction.us/</a></li></ol>
+      </details>
+      <details class="oursvrai">
+        <summary>
+          Contact
+        </summary>
+        <ol><li><a href="mailto: drice-phili@lamue.fun">drice-phili@lamue.fun</a></li><li><a href="https://www.instagram.com/_la.mue/">@la.mue</a></li></ol>
+
+      </details>
+  </div>
+  <div class="bandeauweb">
+    <div class="cercle"></div>
+  </div>
+    </div>
+
+
+  </div>
+  <!-- NAV -->
+  <div class="navigation">
+    <div class="wrapper">
+      <div class="scroller">
+        <!-- images ici -->
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_gazeux/"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_gazeux/"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_gazeux/"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_gazeux"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_gazeux"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_gazeux"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_gazeux"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_gazeux"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_gazeux"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_gazeux"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_gazeux"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_gazeux"></img>
+        <div id="holder" ></div>
+        <audio id="lson" autoplay src="assets_solide\audiolaetitia.mp3"></audio>
+        <img class="pjs" src="assets\transparent.png"data-meta="<a href='https://www.instagram.com/'>@</a>"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_solide/"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_solide/"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_solide/"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_solide/"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_solide/"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_solide/"></img>
+        <img class="image" id="" data-meta="<a href='https://www.instagram.com/'>@</a>" src="assets_solide/"></img>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+<script type="text/javascript" src="zine.js"></script>
+<script type="text/javascript" src="gazeux.js"></script>
+<script type="text/javascript" src="canvas.js"></script>
+<!-- <script src="zoom.js" type="text/javascript" charset="utf-8"></script> -->
+
+</html>
