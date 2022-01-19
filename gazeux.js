@@ -1,4 +1,5 @@
 
+const s = ( sketch ) => {
 let bg;
 let vert;
 let clair;
@@ -7,28 +8,28 @@ class Particle {
 // setting the co-ordinates, radius and the
 // speed of a particle in both the co-ordinates axes.
   constructor(){
-    this.x = random(0,width);
-    this.y = random(0,height);
-    this.r = random(1,5);
-    this.xSpeed = random(0,1);
-    this.ySpeed = random(0,1);
+    this.x = sketch.random(0,sketch.width);
+    this.y = sketch.random(0,sketch.height);
+    this.r = sketch.random(1,5);
+    this.xSpeed = sketch.random(0,1);
+    this.ySpeed = sketch.random(0,1);
   }
 
 // creation of a particle.
   createParticle() {
-    bg = color('#B5B5B5');
-  clair = color('#03F669');
-  vert = color('#E0FEDC');
-    noStroke();
-    fill(vert);
-    circle(this.x,this.y,this.r);
+    bg = sketch.color('#B5B5B5');
+  clair = sketch.color('#03F669');
+  vert = sketch.color('#E0FEDC');
+    sketch.noStroke();
+    sketch.fill(vert);
+    sketch.circle(this.x,this.y,this.r);
   }
 
 // setting the particle in motion.
   moveParticle() {
-    if(this.x < 0 || this.x > width)
+    if(this.x < 0 || this.x > sketch.width)
       this.xSpeed*=-1;
-    if(this.y < 0 || this.y > height)
+    if(this.y < 0 || this.y > sketch.height)
       this.ySpeed*=-1;
     this.x+=this.xSpeed;
     this.y+=this.ySpeed;
@@ -40,21 +41,23 @@ class Particle {
 // an array to add multiple particles
 let particles = [];
 
-function setup() {
-  var cnvphi=createCanvas(720, 400);cnvphi.parent("holderphili");
-  for(let i = 0;i<width/10;i++){
+sketch.setup = function()  {
+  var cnvphi=sketch.createCanvas(720, 400);
+  for(let i = 0;i<cnvphi.width/10;i++){
     particles.push(new Particle());
   }
-}
+};
 
-function draw() {
-  bg = color('#B5B5B5');
-  vert = color('#03F669');
-  clair = color('#E0FEDC');
-  background(clair);
+sketch.draw = function() {
+  bg = sketch.color('#B5B5B5');
+  clair = sketch.color('#03F669');
+  vert = sketch.color('#E0FEDC');
+  sketch.background(clair);
   for(let i = 0;i<particles.length;i++) {
     particles[i].createParticle();
     particles[i].moveParticle();
 
   }
-}
+};
+};
+new p5(s,"holderphili");

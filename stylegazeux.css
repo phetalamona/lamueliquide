@@ -148,7 +148,7 @@ body {
 	position: fixed;
 	right:1%;
 	top:1%;
-	color:var(--black);
+	color:var(--texte);
 	font-size: 5vh;
 	font-family: 'Redaction 35';
 	font-weight: normal;
@@ -176,11 +176,11 @@ body {
 .bookmarksweb li{
   list-style: none;
 	margin: 5px 0;
-	color:black;
+	color: var(--texte);
 }
 
 .bookmarksweb a{
-	color:black;
+	color: var(--texte);
 	background-color: transparent;
   font-family:'Redaction 20';
   text-decoration: none;
@@ -195,7 +195,7 @@ body {
 .bookmarksweb a:active{
   font-family:'Redaction 50';
 	font-style: italic;
-	color: black;
+	color: var(--texte);
 }
 /*OURS-------------------------------*/
 .pours{
@@ -284,15 +284,15 @@ body {
 	top:83%;
 	height: 10%;
 	left:20%;
-
+	width: auto;
 }
 
 .pjs2,#holderphili{
 	position: fixed;
 	top:20%;
 	left:83%;
-	height: 14%;
-	width: auto;
+	height: 400px;
+	width: 720px;
 }
 
 .audioContainer {
@@ -309,21 +309,29 @@ body {
   width: 100%
 }
 
-.pjs::before {
-  background-color: rgb(181,181,181);
+.pjs::before,#holderdrice::before {
+  background-color: var(--violet);
   content: '';
   display: block;
   mix-blend-mode: darken;
-  position: absolute;
+	position: fixed;
+	top:83%;
+	height: 500px;
+	left:20%;
+	width: 500px;
 
 }
 
-.pjs::after {
-  background-color: rgb(3,246,105);
+.pjs::after,#holderdrice::after {
+  background-color: var(--ivoire);
   content: '';
   display: block;
-  mix-blend-mode: lighten;
-  position: absolute;
+  mix-blend-mode: hard-light;
+	position: fixed;
+	top:83%;
+	height: 500px;
+	left:20%;
+	width: 500px;
 }
 /*#image{
 	width: en %; ou height
@@ -421,10 +429,10 @@ summary{
 	cursor: pointer;
 
 }
-.solide a{
+.gazeux a{
 	text-decoration: none;
 	color:black;
 }
-.solide a:hover{
+.gazeux a:hover{
 	color:var(--violet);
 }
