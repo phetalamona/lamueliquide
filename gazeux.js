@@ -17,8 +17,8 @@ class Particle {
 // creation of a particle.
   createParticle() {
     bg = color('#B5B5B5');
-  vert = color('#03F669');
-  clair = color('#E0FEDC');
+  clair = color('#03F669');
+  vert = color('#E0FEDC');
     noStroke();
     fill(vert);
     circle(this.x,this.y,this.r);
@@ -41,7 +41,7 @@ class Particle {
 let particles = [];
 
 function setup() {
-  var cnvphi=createCanvas(720, 400);cnv.parent("holderphili");
+  var cnvphi=createCanvas(720, 400);cnvphi.parent("holderphili");
   for(let i = 0;i<width/10;i++){
     particles.push(new Particle());
   }

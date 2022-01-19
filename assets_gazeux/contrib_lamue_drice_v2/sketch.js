@@ -9,7 +9,7 @@ let first = false;
 
 
 function preload() {
-  uniformsShader = loadShader('a.vert', 'a.frag');
+  uniformsShader = loadShader('assets_gazeux/contrib_lamue_drice_v2/a.vert', 'assets_gazeux/contrib_lamue_drice_v2/a.frag');
   //post = loadShader('hmhm.vert', 'hmhm.frag');
 
 }
@@ -61,4 +61,3 @@ let col2 = color('#03F669')
   //tint(20,220,20)
 
 }
-

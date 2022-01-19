@@ -215,7 +215,7 @@ body {
 	overflow: hidden; /* this is important to prevent the whole page to bounce */
 }
 .scroller img{
-  mix-blend-mode:darken;
+  mix-blend-mode:normal;
   position: fixed;
 }
 
@@ -268,7 +268,7 @@ body {
 	top:32%;
 	left:77%;
 }
-#laetitia{
+#laetitiagaz{
 	width: 13%;
 	top:42%;
 	left:17%;
@@ -282,10 +282,8 @@ body {
 .pjs,#holderdrice{
 	position: fixed;
 	top:83%;
+	height: 10%;
 	left:20%;
-	height: 14%;
-	width: auto;
-	mix-blend-mode:darken;
 
 }
 
@@ -295,7 +293,6 @@ body {
 	left:83%;
 	height: 14%;
 	width: auto;
-	mix-blend-mode:darken;
 }
 
 .audioContainer {
@@ -312,28 +309,21 @@ body {
   width: 100%
 }
 
-#holderdrice::before {
+.pjs::before {
   background-color: rgb(181,181,181);
   content: '';
   display: block;
-  width: 500px;
-  height: 500px;
   mix-blend-mode: darken;
   position: absolute;
-  top: 0;
-  left: 0;
+
 }
 
-#holderdrice::after {
+.pjs::after {
   background-color: rgb(3,246,105);
   content: '';
   display: block;
-  width: 500px;
-  height: 500px;
   mix-blend-mode: lighten;
   position: absolute;
-  top: 0;
-  left: 0;
 }
 /*#image{
 	width: en %; ou height
