@@ -87,9 +87,9 @@ a{
   color:#040AE3;
 }
 .ga{
-  background:white;
+  background:#03F669;
 }
-.gaz:hover{}
+.gaz:hover{color:#03F669}
 
 .pl{
   background:white;
