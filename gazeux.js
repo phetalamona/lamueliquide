@@ -1,25 +1,60 @@
-let t =0;
-let p;
+
+let bg;
+let vert;
+let clair;
+// this class describes the properties of a single particle.
+class Particle {
+// setting the co-ordinates, radius and the
+// speed of a particle in both the co-ordinates axes.
+  constructor(){
+    this.x = random(0,width);
+    this.y = random(0,height);
+    this.r = random(1,5);
+    this.xSpeed = random(0,1);
+    this.ySpeed = random(0,1);
+  }
+
+// creation of a particle.
+  createParticle() {
+    bg = color('#B5B5B5');
+  vert = color('#03F669');
+  clair = color('#E0FEDC');
+    noStroke();
+    fill(vert);
+    circle(this.x,this.y,this.r);
+  }
+
+// setting the particle in motion.
+  moveParticle() {
+    if(this.x < 0 || this.x > width)
+      this.xSpeed*=-1;
+    if(this.y < 0 || this.y > height)
+      this.ySpeed*=-1;
+    this.x+=this.xSpeed;
+    this.y+=this.ySpeed;
+  }
+
+
+}
+
+// an array to add multiple particles
+let particles = [];
+
 function setup() {
-var cnv=createCanvas(600,600);cnv.parent("holder");  p = createGraphics(600,600,WEBGL)
-  frameRate(30);
+  var cnvphi=createCanvas(720, 400);cnv.parent("holderphili");
+  for(let i = 0;i<width/10;i++){
+    particles.push(new Particle());
+  }
 }
 
 function draw() {
-//background(233,243,245,10);
-  if(frameCount%60==0){p.background(233,243,245,40);}
-  for(i=0;i<40;i+=10){
-  push();
-  p.rotateX(radians(460));
-  p.rotateZ(radians(map(t+noise(t,20),0,width,0,460)));
-  p.rotateY(radians(map(sin(t)*30,0,width,0,560)));
+  bg = color('#B5B5B5');
+  vert = color('#03F669');
+  clair = color('#E0FEDC');
+  background(clair);
+  for(let i = 0;i<particles.length;i++) {
+    particles[i].createParticle();
+    particles[i].moveParticle();
 
-  p.noFill();
-  p.stroke(5,11,227,i+sin(t));
-  let a =(width^noise(t)&0)/2;
-  p.box(80+i,a);
-  pop();
   }
-  image(p,0,0);
-  t+=0.005;
 }

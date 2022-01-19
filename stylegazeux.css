@@ -143,7 +143,7 @@ body {
 	font-family: 'Redaction 50';
 	font-weight: normal;
 }
-.solide{
+.gazeux{
 	z-index: 2;
 	position: fixed;
 	right:1%;
@@ -218,24 +218,123 @@ body {
   mix-blend-mode:darken;
   position: fixed;
 }
-/*
-#agathet{
+
+#agathe{
 	width: 13%;
 	top:2%;
 	left:7%;
-}*/
+}
+
+#alicericci{
+	width: 8%;
+	top:20%;
+	left:10%;
+}
+
+#aurelia{
+	width: 13%;
+	top:80%;
+	left:30%;
+}
+
+#claire{
+	width: 13%;
+	top:2%;
+	left:40%;
+}
+
+#guillaume{
+	width: 13%;
+	top:50%;
+	left:50%;
+}
+#julien{
+	width: 13%;
+	top:90%;
+	left:60%;
+}
+#lilly{
+	width: 13%;
+	top:15%;
+	left:2%;
+}
+#margo{
+	width: 13%;
+	top:30%;
+	left:27%;
+}
+#deux08heures{
+	width: 13%;
+	top:32%;
+	left:77%;
+}
+#laetitia{
+	width: 13%;
+	top:42%;
+	left:17%;
+}
+#valcotin{
+	width: 13%;
+	top:70%;
+	left:73%;
+}
 
 .pjs,#holderdrice{
 	position: fixed;
 	top:83%;
-	left:3%;
+	left:20%;
 	height: 14%;
 	width: auto;
 	mix-blend-mode:darken;
 
 }
 
+.pjs2,#holderphili{
+	position: fixed;
+	top:20%;
+	left:83%;
+	height: 14%;
+	width: auto;
+	mix-blend-mode:darken;
+}
 
+.audioContainer {
+  width: 200px;
+  height: 200px;
+  background-image: url('assets_gazeux/clara_vermersch/gazeuxfinal.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.audioContainer audio{
+  position: absolute;
+  bottom: 0;
+  width: 100%
+}
+
+#holderdrice::before {
+  background-color: rgb(181,181,181);
+  content: '';
+  display: block;
+  width: 500px;
+  height: 500px;
+  mix-blend-mode: darken;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#holderdrice::after {
+  background-color: rgb(3,246,105);
+  content: '';
+  display: block;
+  width: 500px;
+  height: 500px;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 /*#image{
 	width: en %; ou height
 	top: en %;
