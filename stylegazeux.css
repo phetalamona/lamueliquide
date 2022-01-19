@@ -226,15 +226,15 @@ body {
 }
 
 #alicericci{
-	width: 25%;
-	top:7%;
-	left:9%;
+	width: 20%;
+	top:5%;
+	right:15%;
 }
 
 #aurelia{
 	width: 13%;
 	bottom:10%;
-	right:15%;
+	right:20%;
 }
 
 #claire{
@@ -250,23 +250,24 @@ body {
 }
 #julien{
 	width: 8%;
-	bottom:6%;
+	bottom:0%;
 	left:40%;
 }
 #lilly{
 	width: 12%;
-	top:25%;
-	left:2%;
+	top:18%;
+	left:52%;
 }
 #margo{
 	width: 17%;
-	top:35%;
+	top:30%;
 	left:30%;
 }
 #deux08heures{
 	width: 18%;
-	top:5%;
-	right:15%;
+	top:9%;
+	left:12%;
+
 }
 #laetitiagaz{
 	width: 8%;
@@ -281,13 +282,13 @@ body {
 
 #haraka{
 	position: fixed;
-	top:25%;
-	left:60%;
+	top:35%;
+	left:55%;
 }
 
 .pjs,#holderdrice{
 	position: fixed;
-	top:83%;
+	top:79%;
 	height: 10%;
 	left:15%;
 	width: auto;
@@ -296,7 +297,7 @@ body {
 .pjs2,#holderphili{
 	position: fixed;
 	top:23%;
-	left:80%;
+	left:70%;
 	height: 400px;
 	width: 720px;
 }
@@ -323,7 +324,7 @@ body {
   display: block;
   mix-blend-mode: darken;
 	position: fixed;
-	top:83%;
+	top:79%;
 	height: 500px;
 	left:15%;
 	width: 500px;
@@ -336,7 +337,7 @@ body {
   display: block;
   mix-blend-mode: hard-light;
 	position: fixed;
-	top:83%;
+	top:79%;
 	height: 500px;
 	left:15%;
 	width: 500px;
