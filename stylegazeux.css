@@ -5,8 +5,9 @@
 	box-sizing: border-box;
 }
 :root{
-  --ivoire: #e9f3f5;
-  --violet: #040ae3;
+  --ivoire: #03F669;
+  --violet: #E0FEDC;
+	--texte: #B5B5B5;
 }
 html {
 	overflow: hidden;
@@ -217,123 +218,14 @@ body {
   mix-blend-mode:darken;
   position: fixed;
 }
+/*
 #agathet{
 	width: 13%;
 	top:2%;
 	left:7%;
-}
-#emilie{
-	width: 13%;
-	top:30%;
-	left:20%;
-}
+}*/
 
-#xavier{
-	width: 13%;
-	bottom:5%;
-	left:40%;
-}
-
-#coralie{
-	width: 13%;
-	top:45%;
-	left:55%;
-}
-
-#chiara{
-	width: 13%;
-	top:55%;
-	left:3%;
-}
-
-#valcotin{
-	width: 15%;
-	bottom:5%;
-	left:30%;
-}
-
-#phili {width:11.5%;
-	bottom:30%;
-	left:35%;
-}
-
-#marjo {width:15%;
-	top:5%;
-	left:55%;
-}
-
-#agathes{
-	width: 13.5%;
-	top:25%;
-	left:48%;
-}
-
-#neve{
-	width: 12%;
-	bottom:20%;
-	right:6%;
-}
-
-#zoe{
-	width: 13%;
-	top:2%;
-	right:5%;
-}
-
-#chloe{
-	width: 13%;
-	top:45%;
-	left:5%;
-}
-
-#seb{
-	width: 14%;
-	bottom:5%;
-	right:15%;
-}
-
-#jon{
-	width: 16%;
-	bottom:40%;
-	right:2%;
-}
-
-#alma{
-	width: 12.01%;
-	top:10%;
-	left:25%;
-}
-#almagif{
-	width:12%;
-	top:10%;
-	left:35%;
-mix-blend-mode: normal;
-}
-
-#laetitia{
-	width: 13%;
-	bottom:15%;
-	right:30%;
-}
-
-#lilly{
-	width: 13%;
-	top:42%;
-	left:22%;
-}
-
-#valcotin{
-	width: 14%;
-	bottom:10%;
-	left:20%;
-}
-
-#niedermeier{
-	width: 15%;
-	bottom:50%;
-	left:70%;
-}
-.pjs,#holder{
+.pjs,#holderdrice{
 	position: fixed;
 	top:83%;
 	left:3%;
@@ -342,6 +234,8 @@ mix-blend-mode: normal;
 	mix-blend-mode:darken;
 
 }
+
+
 /*#image{
 	width: en %; ou height
 	top: en %;
