@@ -1,0 +1,34 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+#duotone{
+  
+}
+#duotone::before {
+  background-color: rgb(181,181,181);
+  content: '';
+  display: block;
+  width: 500px;
+  height: 500px;
+  mix-blend-mode: darken;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#duotone::after {
+  background-color: rgb(3,246,105);
+  content: '';
+  display: block;
+  width: 500px;
+  height: 500px;
+  mix-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
